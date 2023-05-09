@@ -1,6 +1,9 @@
-app = "my-bot-name"
-kill_signal = "SIGINT"
-kill_timeout = 5
-processes = []
+# fly.toml app configuration file generated for bn-discord-bot on 2023-05-08T18:39:19-05:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
 
-[env]
+app = "bn-discord-bot"
+primary_region = "bos"
+kill_signal = "SIGINT"
+kill_timeout = "5s"

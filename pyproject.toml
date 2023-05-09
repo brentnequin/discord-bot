@@ -3,7 +3,6 @@ name = "discord-bot"
 version = "0.1.0"
 description = ""
 authors = ["Brent Nequin <brentnequin@gmail.com>"]
-readme = "README.md"
 packages = [{include = "discord_bot"}]
 
 [tool.poetry.dependencies]
