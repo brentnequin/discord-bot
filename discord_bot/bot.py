@@ -6,7 +6,7 @@ import random
 import discord
 from discord.ext import commands
 
-from fornite import landing_spots
+from fortnite import landing_spots
 
 load_dotenv()
 token = os.getenv('DISCORD_TOKEN')

@@ -23,4 +23,3 @@ def landing_spots(season: int, chapter: int):
         return spots[season][chapter]
     except KeyError as e:
         return None
-
