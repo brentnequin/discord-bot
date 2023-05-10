@@ -18,7 +18,11 @@ bot = commands.Bot(command_prefix='$', intents=intents)
 fornite_season_chapter = (4, 2)
 
 @bot.command(name='fn')
-async def fortnite_choose_random_landing_spot(ctx):
-    await ctx.send(random.choice(landing_spots(*fornite_season_chapter)))
+async def fortnite_choose_random_landing_spot(ctx: commands.Context):
+    await ctx.message.delete()
+    await ctx.send(
+        random.choice(landing_spots(*fornite_season_chapter)),
+        delete_after=15.0
+    )
 
 bot.run(token)
